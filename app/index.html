@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Platinum Guide — GTA VI Trophy Guide &amp; Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5</p>
+    <h1>Leonida Platinum Guide</h1>
+    <p class="sub">Every one of the 55 official trophies, with a guide that cites its sources — and a tracker that works offline.</p>
+  </div>
+  <div class="progress" id="progress">
+    <div class="big"><span id="earned-count">0</span><span class="of"> / 55</span></div>
+    <div class="bar"><div class="fill" id="progress-fill"></div></div>
+    <div class="grades" id="grade-counts"></div>
+  </div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <a href="#/checklist" data-view="checklist">Checklist</a>
+  <a href="#/roadmap" data-view="roadmap">Roadmap to Platinum</a>
+  <a href="#/missables" data-view="missables">Missables <span class="badge" id="missable-count">7</span></a>
+</nav>
+
+<main>
+  <section class="view" id="view-checklist">
+    <div class="controls" id="controls">
+      <input id="search" type="search" placeholder="Search trophies…" aria-label="Search trophies">
+      <label>Kind
+        <select id="filter-kind">
+          <option value="all">All kinds</option>
+          <option value="story">Story</option>
+          <option value="side">Strangers &amp; contacts</option>
+          <option value="collectible">Collectibles</option>
+          <option value="activity">Activities</option>
+          <option value="crime">Crime</option>
+          <option value="grind">Grinds</option>
+          <option value="misc">Odd jobs</option>
+          <option value="platinum">Platinum</option>
+        </select>
+      </label>
+      <label>Grade
+        <select id="filter-grade">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Status
+        <select id="filter-earned">
+          <option value="all">Earned &amp; unearned</option>
+          <option value="earned">Earned only</option>
+          <option value="unearned">Not earned yet</option>
+        </select>
+      </label>
+      <label class="check"><input id="filter-missable" type="checkbox"> Missable only</label>
+      <button id="spoiler-toggle" type="button" aria-pressed="false">Spoilers: off</button>
+      <span class="spacer"></span>
+      <button id="export" type="button">Export progress</button>
+      <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
+      <button id="reset" type="button">Reset</button>
+    </div>
+    <p class="hint" id="result-count"></p>
+    <div class="split">
+      <div class="list" id="list" role="list"></div>
+      <aside class="detail" id="detail" aria-live="polite"></aside>
+    </div>
+  </section>
+
+  <section class="view" id="view-roadmap" hidden>
+    <p class="lede">The road to the platinum in four stages, built from the official trophy descriptions. Story first, then strangers, then the map, then the grinds.</p>
+    <div id="roadmap"></div>
+  </section>
+
+  <section class="view" id="view-missables" hidden>
+    <p class="lede">Seven trophies carry a missable flag. The flags come from the official descriptions alone — the game is a day old, so nothing here is confirmed in-game. <strong>Yes</strong> means the description points at a real one-way window; <strong>possible</strong> means it might be one, and the note says why.</p>
+    <div id="missables"></div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>Sources.</strong> Trophy names, descriptions and grades are the official PlayStation 5 list as published by
+  <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase</a> and
+  <a href="https://psnprofiles.com/trophies/43531-grand-theft-auto-vi">PSNProfiles</a> (18 November 2026), the two agreeing on every name, description and grade; PSN counts (42 Shooting Range challenges, 14 drone race locations, 18 meditation spots, 52 areas, 9 gangs, 8 garages, 9 activity types, 500 choices) are PSNProfiles' progress targets. Every guide is written for this entry, in our own words, from the official description — and where a step is not pinned down in any published source, the guide says so instead of inventing it. Links open only if you follow them; the app itself fetches nothing and works with the network off.</p>
+  <p class="fine">An unofficial fan guide. Not affiliated with Rockstar Games or PlayStation. No Rockstar logo, artwork or text is used here.</p>
+</footer>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
